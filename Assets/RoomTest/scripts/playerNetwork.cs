@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class playerNetwork : Photon.MonoBehaviour {
+public class playerNetwork : Photon.MonoBehaviour 
+{
+
     playerController controllerScript;
 
 	void Awake () 
@@ -15,7 +17,6 @@ public class playerNetwork : Photon.MonoBehaviour {
         }
         else
         {
-
             controllerScript.enabled = true;
             controllerScript.isControllable = false;
         }

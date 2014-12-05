@@ -6,7 +6,9 @@ public class playerController : MonoBehaviour {
     private Vector2 position;
     public bool isControllable = true;
 	// Use this for initialization
-	void Start () {
+
+	void Start () 
+    {
         position = this.gameObject.transform.position;
 	}
 	
@@ -31,11 +33,10 @@ public class playerController : MonoBehaviour {
                 position.x += 0.2f;
             }
         }
-    }
 
-	// Update is called once per frame
-	void FixedUpdate () 
-    {   
+        CharacterController controller = GetComponent<CharacterController>();
+        controller.Move(position);
+
         this.gameObject.transform.position = position;
-	}
+    }
 }
