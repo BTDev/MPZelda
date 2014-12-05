@@ -3,7 +3,7 @@ using System.Collections;
 
 public class playerController : MonoBehaviour {
 
-    private Vector2 position;
+    public Vector2 position;
     public bool isControllable = true;
 	// Use this for initialization
 
@@ -33,9 +33,6 @@ public class playerController : MonoBehaviour {
                 position.x += 0.2f;
             }
         }
-
-        CharacterController controller = GetComponent<CharacterController>();
-        controller.Move(position);
 
         this.gameObject.transform.position = position;
     }

@@ -45,7 +45,7 @@ public class playerNetwork : Photon.MonoBehaviour
         if (!photonView.isMine)
         {
             //Update remote player (smooth this, this looks good, at the cost of some accuracy)
-            transform.position = Vector3.Lerp(transform.position, correctPlayerPos, Time.deltaTime * 5);
+            controllerScript.position = Vector2.Lerp(controllerScript.position, correctPlayerPos, Time.deltaTime * 15);
         }
     }
 }
