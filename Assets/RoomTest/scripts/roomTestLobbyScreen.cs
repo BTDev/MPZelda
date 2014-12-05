@@ -1,17 +1,18 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class LobbyScreen : MonoBehaviour {
+public class roomTestLobbyScreen : MonoBehaviour
+{
     Vector2 lobbyScroll = Vector2.zero;
 
     void Awake()
     {
         PhotonNetwork.automaticallySyncScene = true;
     }
-	
+
     void OnGUI()
     {
-        if(GUILayout.Button("Join Random", GUILayout.Width(200f)))
+        if (GUILayout.Button("Join Random", GUILayout.Width(200f)))
         {
             PhotonNetwork.JoinRandomRoom();
         }
@@ -22,7 +23,7 @@ public class LobbyScreen : MonoBehaviour {
         }
 
         RoomInfo[] rooms = PhotonNetwork.GetRoomList();
-        if(rooms.Length == 0)
+        if (rooms.Length == 0)
         {
             GUILayout.Label("No Rooms Available");
         }
@@ -30,10 +31,10 @@ public class LobbyScreen : MonoBehaviour {
         {
             lobbyScroll = GUILayout.BeginScrollView(lobbyScroll, GUILayout.Width(220f), GUILayout.ExpandHeight(true));
         }
-        foreach(RoomInfo room in PhotonNetwork.GetRoomList())
+        foreach (RoomInfo room in PhotonNetwork.GetRoomList())
         {
             GUILayout.Label(room.name + " - " + room.playerCount + "/" + room.maxPlayers);
-            if(GUILayout.Button("Enter"))
+            if (GUILayout.Button("Enter"))
             {
                 PhotonNetwork.JoinRoom(room.name);
             }
@@ -48,6 +49,6 @@ public class LobbyScreen : MonoBehaviour {
 
     void OnCreatedRoom()
     {
-        PhotonNetwork.LoadLevel("ChatRoom");
+        PhotonNetwork.LoadLevel("roomTest");
     }
 }
