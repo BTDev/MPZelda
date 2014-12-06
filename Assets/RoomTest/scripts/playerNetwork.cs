@@ -9,7 +9,6 @@ public class playerNetwork : Photon.MonoBehaviour
 	void Awake () 
     {
         controllerScript = GetComponent<playerController>();
-
         if (photonView.isMine)
         {
             //MINE: local player, simply enable the local scripts
