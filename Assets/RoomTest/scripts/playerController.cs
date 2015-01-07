@@ -6,7 +6,27 @@ public class playerController : MonoBehaviour {
     public Vector2 position;
     public bool isControllable = true;
 
-    protected Animator animator;
+    private Animator animator;
+
+    void move(int direction)
+    {
+        if (direction == 0)
+        {
+            position.y -= 0.2f;
+        }
+        else if (direction == 1)
+        {
+            position.x -= 0.2f;
+        }
+        else if (direction == 2)
+        {
+            position.y += 0.2f;
+        }
+        else if(direction == 3)
+        {
+            position.x += 0.2f;
+        }
+    }
 
 	void Start () 
     {
@@ -18,42 +38,80 @@ public class playerController : MonoBehaviour {
     {
         if (isControllable)
         {
-            if (Input.GetKey(KeyCode.Space))
+            var vertical = Input.GetAxis("Vertical");
+            var horizontal = Input.GetAxis("Horizontal");
+            var direction = 0;
+            animator.SetBool("Attack", false);
+            animator.enabled = true;
+
+            if (Input.GetButtonDown("Fire1"))
             {
-                animator.SetBool("isWalk", false);
-                animator.SetBool("isAttack", true);
+                animator.SetBool("Attack", true);
             }
-            else if (Input.GetKey(KeyCode.W))
+            else if (vertical > 0)
             {
-                animator.SetBool("isWalk", true);
-                animator.SetInteger("direction", 0);
-                position.y += 0.2f;
+                if (!isAttacking())
+                {
+                    direction = 2;
+                    animator.SetInteger("Direction", direction);
+                    move(direction);
+                }
+
             }
-            else if (Input.GetKey(KeyCode.S))
+            else if (vertical < 0)
             {
-                animator.SetBool("isWalk", true);
-                animator.SetInteger("direction", 1);
-                position.y -= 0.2f;
+                if (!isAttacking())
+                {
+                    direction = 0;
+                    animator.SetInteger("Direction", direction);
+                    move(direction);
+                }
+
             }
-            else if (Input.GetKey(KeyCode.A))
+            else if (horizontal > 0)
             {
-                animator.SetBool("isWalk", true);
-                animator.SetInteger("direction", 2);
-                position.x -= 0.2f;
+                if (!isAttacking())
+                {
+                    direction = 3;
+                    animator.SetInteger("Direction", direction);
+                    move(direction);
+                }
             }
-            else if (Input.GetKey(KeyCode.D))
+            else if (horizontal < 0)
             {
-                animator.SetBool("isWalk", true);
-                animator.SetInteger("direction", 3);
-                position.x += 0.2f;
+                if (!isAttacking())
+                {
+                    direction = 1;
+                    animator.SetInteger("Direction", direction);
+                    move(direction);
+                }
+
             }
             else
             {
-                animator.SetBool("isAttack", false);
-                animator.SetBool("isWalk", false);
+                if (!isAttacking())
+                {
+                    animator.SetBool("Attack", false);
+                    animator.enabled = false;
+                }
             }
         }
 
         this.gameObject.transform.position = position;
+    }
+
+    public bool isAttacking()
+    {
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName("attackEast") || 
+            animator.GetCurrentAnimatorStateInfo(0).IsName("attackWest") || 
+            animator.GetCurrentAnimatorStateInfo(0).IsName("attackNorth") || 
+            animator.GetCurrentAnimatorStateInfo(0).IsName("attackSouth"))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 }

@@ -157,6 +157,22 @@ TextureImporter:
     21300304: legendofzelda_link_sheet_152
     21300306: legendofzelda_link_sheet_153
     21300308: legendofzelda_link_sheet_154
+    21300310: legendofzelda_link_sheet_0
+    21300312: legendofzelda_link_sheet_1
+    21300314: legendofzelda_link_sheet_2
+    21300316: legendofzelda_link_sheet_3
+    21300318: legendofzelda_link_sheet_12
+    21300320: legendofzelda_link_sheet_13
+    21300322: legendofzelda_link_sheet_14
+    21300324: legendofzelda_link_sheet_15
+    21300326: legendofzelda_link_sheet_24
+    21300328: legendofzelda_link_sheet_25
+    21300330: legendofzelda_link_sheet_26
+    21300332: legendofzelda_link_sheet_27
+    21300334: legendofzelda_link_sheet_36
+    21300336: legendofzelda_link_sheet_37
+    21300338: legendofzelda_link_sheet_38
+    21300340: legendofzelda_link_sheet_39
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -198,7 +214,7 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: gwalkDown1
+    - name: legendofzelda_link_sheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -207,18 +223,18 @@ TextureImporter:
         height: 16
       alignment: 0
       pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 8}
-    - name: gwalkLeft1
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: legendofzelda_link_sheet_1
       rect:
         serializedVersion: 2
-        x: 29
+        x: 30
         y: 287
         width: 16
         height: 16
       alignment: 0
       pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 8}
-    - name: gwalkUp1
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: legendofzelda_link_sheet_2
       rect:
         serializedVersion: 2
         x: 60
@@ -227,8 +243,8 @@ TextureImporter:
         height: 16
       alignment: 0
       pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 8}
-    - name: gwalkRight1
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: legendofzelda_link_sheet_3
       rect:
         serializedVersion: 2
         x: 91
@@ -237,7 +253,7 @@ TextureImporter:
         height: 15
       alignment: 0
       pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 7}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: legendofzelda_link_sheet_4
       rect:
         serializedVersion: 2
@@ -318,46 +334,46 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: gwalkDown2
+    - name: legendofzelda_link_sheet_12
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1
         y: 257
-        width: 16
+        width: 13
         height: 16
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 8}
-    - name: gwalkLeft2
+      alignment: 2
+      pivot: {x: .5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: legendofzelda_link_sheet_13
       rect:
         serializedVersion: 2
-        x: 29
+        x: 31
         y: 258
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 8}
-    - name: gwalkUp2
+        width: 14
+        height: 15
+      alignment: 5
+      pivot: {x: 1, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: legendofzelda_link_sheet_14
       rect:
         serializedVersion: 2
-        x: 60
+        x: 62
         y: 257
-        width: 16
+        width: 12
         height: 16
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 8}
-    - name: gwalkRight2
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: legendofzelda_link_sheet_15
       rect:
         serializedVersion: 2
         x: 90
         y: 257
-        width: 16
+        width: 15
         height: 16
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 8}
+      alignment: 4
+      pivot: {x: 0, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: legendofzelda_link_sheet_16
       rect:
         serializedVersion: 2
@@ -438,46 +454,46 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: gAttackDownI
+    - name: legendofzelda_link_sheet_24
       rect:
         serializedVersion: 2
         x: 0
         y: 228
         width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 8}
-    - name: gAttackLeftI
+        height: 15
+      alignment: 2
+      pivot: {x: .5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: legendofzelda_link_sheet_25
       rect:
         serializedVersion: 2
         x: 30
         y: 228
         width: 15
         height: 15
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 8}
-    - name: gAttackUptI
+      alignment: 5
+      pivot: {x: 1, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: legendofzelda_link_sheet_26
       rect:
         serializedVersion: 2
         x: 60
         y: 227
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 8}
-    - name: gAttackRightI
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: legendofzelda_link_sheet_27
       rect:
         serializedVersion: 2
         x: 90
         y: 228
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 8}
+        width: 15
+        height: 15
+      alignment: 4
+      pivot: {x: 0, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: legendofzelda_link_sheet_28
       rect:
         serializedVersion: 2
@@ -558,46 +574,46 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: gAttackDownS
+    - name: legendofzelda_link_sheet_36
       rect:
         serializedVersion: 2
         x: 0
-        y: 191
+        y: 192
         width: 16
-        height: 28
-      alignment: 9
-      pivot: {x: .5, y: .75}
-      border: {x: 0, y: 12, z: 0, w: 8}
-    - name: gAttackLeftS
+        height: 27
+      alignment: 2
+      pivot: {x: .5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: legendofzelda_link_sheet_37
       rect:
         serializedVersion: 2
-        x: 23
+        x: 24
         y: 198
-        width: 28
-        height: 16
-      alignment: 9
-      pivot: {x: .75, y: .5}
-      border: {x: 12, y: 0, z: 0, w: 8}
-    - name: gAttackUpS
+        width: 27
+        height: 15
+      alignment: 5
+      pivot: {x: 1, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: legendofzelda_link_sheet_38
       rect:
         serializedVersion: 2
         x: 60
         y: 191
         width: 16
         height: 28
-      alignment: 9
-      pivot: {x: .5, y: .25}
-      border: {x: 0, y: 7, z: 0, w: 13}
-    - name: gAttackRightS
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: legendofzelda_link_sheet_39
       rect:
         serializedVersion: 2
         x: 84
         y: 198
-        width: 28
-        height: 16
-      alignment: 9
-      pivot: {x: .25, y: .5}
-      border: {x: 0, y: 0, z: 13, w: 8}
+        width: 27
+        height: 15
+      alignment: 4
+      pivot: {x: 0, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: legendofzelda_link_sheet_40
       rect:
         serializedVersion: 2
@@ -685,8 +701,8 @@ TextureImporter:
         y: 162
         width: 16
         height: 27
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 2
+      pivot: {x: .5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: legendofzelda_link_sheet_49
       rect:
@@ -695,8 +711,8 @@ TextureImporter:
         y: 168
         width: 27
         height: 15
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 5
+      pivot: {x: 1, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: legendofzelda_link_sheet_50
       rect:
@@ -705,8 +721,8 @@ TextureImporter:
         y: 161
         width: 16
         height: 28
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: legendofzelda_link_sheet_51
       rect:
@@ -715,8 +731,8 @@ TextureImporter:
         y: 168
         width: 27
         height: 15
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 4
+      pivot: {x: 0, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: legendofzelda_link_sheet_52
       rect:
@@ -805,8 +821,8 @@ TextureImporter:
         y: 137
         width: 13
         height: 16
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 2
+      pivot: {x: .5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: legendofzelda_link_sheet_61
       rect:
@@ -815,16 +831,16 @@ TextureImporter:
         y: 137
         width: 14
         height: 16
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 2
+      pivot: {x: .5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: legendofzelda_link_sheet_62
       rect:
         serializedVersion: 2
-        x: 72
-        y: 130
-        width: 4
-        height: 10
+        x: 60
+        y: 127
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -981,10 +997,10 @@ TextureImporter:
     - name: legendofzelda_link_sheet_78
       rect:
         serializedVersion: 2
-        x: 78
-        y: 130
-        width: 10
-        height: 4
+        x: 75
+        y: 118
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
